@@ -1,0 +1,311 @@
+@font-face{
+    font-family: 'csgo';
+    src: url('../fonts/cs_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'font2';
+    src: url('../fonts/arg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width: 1000px){
+    nav .flex{
+        flex-direction: column;
+    }
+    nav .col .nav-link{
+        text-align: left;
+    }
+    .modes-block{
+        flex-direction: column;
+    }
+    .modes-block .ml-auto-perso{
+        margin-right: auto;
+    }
+    .modes-block .mr-auto-perso{
+        margin-left: auto;
+    }
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    background: url("../images/bg.jpg") no-repeat fixed;
+    background-size: cover;
+    margin: 0 0 75px;
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+}
+.flex-direction{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    transition: all 0.5s ease-out;
+}
+.img-logo{
+    width: 60px;
+}
+nav{
+    background-color: #0c0f12;
+    font-family: csgo;
+}
+nav .nav-item{
+    text-align: center;
+    width: 10%;
+}
+.nav-link{
+    color: white;
+    transition: all 0.3s ease-out;
+    padding: 0;
+}
+.nav-link:hover{
+    color: #de9b35;
+    transform: scale(1.2);
+}
+.title{
+    color: #de9b35;
+}
+.title:hover{
+    transform: none;
+}
+.nav-link:active{
+    color: #de9b35;
+}
+footer{
+    background:#0c0f12;
+    color: #FFFFFF;
+    font-family: font2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+}
+footer p a{
+    color: white;
+}
+footer a:hover{
+    color: #de9b35;
+}
+.bloc-welcome{
+    width: 100%;
+    color: white;
+    background-color: rgba(222,155,53,0.8);
+    font-family: font2;
+}
+.video-block{
+    width: 560px;
+}
+.block-presentation{
+    color: white;
+    background-color: rgba(65,58,39,0.8);
+    padding: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+.block-presentation p{
+    text-align: justify;
+    font-family: font2;
+    font-size: 13px;
+}
+span{
+    color: #de9b35;
+}
+a{
+    text-decoration: none;
+}
+.carousel-inner{
+    margin-bottom: 250px;
+}
+.carousel-item{
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid rgba(0, 0,0,0.5);
+    border-radius: 5px 5px 5px 5px;
+    z-index: 0;
+}
+.carousel-inner h1{
+    color: white;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+    z-index: 2;
+    width: 100%;
+    font-family: font2;
+    background-color: rgba(0, 0,0,0.5);
+    text-align: center;
+}
+.carousel-item img {
+	-webkit-filter: grayscale(0) blur(3px);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .2s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.carousel-item:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+.sr-only{
+    color: white;
+}
+.carousel-caption{
+    background-color: rgba(0, 0,0,0.5);
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.carousel-caption p{
+    color: white;
+    font-family: font2;
+}
+.contact{
+	width: 100%;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: rgba(65,58,39,0.8);
+	color: white;
+	font-family: font2;
+}
+.contact h2{
+	text-align: center;
+	font-size: 30px;
+	font-family: font2;
+}
+.contact-element{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-element label{
+	width: 50%;
+	font-size: 20px;
+}
+.contact-element input{
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+	border: 1px solid #de9b35;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+}
+
+.contact-form{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact-element-form{
+    padding: 5px;
+}
+.contact-element input[type=submit]{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	font-family: csgo;
+	color: rgba(255,255,255,0.5);
+	background-color: rgba(0,0,0,0.1);
+	border: 1px solid #de9b35;
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+}
+.contact-element input[type=submit]:hover{
+	transition: all 0.3s ease-out;
+	color: white;
+}
+.contact-element textarea{
+	resize: none;
+	width: 100%;
+	height: 100px;
+	font-family: font2;
+	background-color: rgba(0,0,0,0.1);
+	border: 1px solid #de9b35;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+}
+::placeholder{
+    color: rgba(255,255,255,0.8);
+}
+#oca{
+    text-align: justify;
+}
+.ml-auto-perso{
+    margin-left: auto;
+}
+.mr-auto-perso{
+    margin-right: auto;
+}
+.modes-block{
+    display: flex;
+}
+.card-body{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 15rem;
+}
+.text-justify{
+    text-align: justify;
+}
+.modes-block .btn-info{
+    background-color: #de9b35;
+    border: 1px solid rgba(0, 0,0,0.5);
+    color: white;
+}
+.fa{
+    color: rgba(222,155,53,0.8);
+    margin-left: -25px;
+    margin-top: 3px;
+    position: absolute;
+}
+.block-mentions{
+    color: white;
+    font-family: font2;
+    background-color: rgba(65,58,39,0.8);
+    margin-bottom: 100px;
+}
+.block-armes{
+    color: white;
+    background-color: rgb(222,155,53);
+    padding: 5px;
+}
+.armes{
+    background-color: white;
+    font-family: font2;
+}
+.sketchfab-embed-wrapper iframe{
+    width: 100%;
+    height: 500px;
+    margin-left: 10px;
+}
+.armes p{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.equipement p{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.top10{
+    width: 50%;
+    color: white;
+}
+.top10 img{
+    width: 3rem;
+}
+.table-top10-title{
+    color: white;
+}
